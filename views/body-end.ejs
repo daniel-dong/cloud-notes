@@ -1,0 +1,14 @@
+<script src="/bower/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/notify.min.js"></script>
+
+<% if (flashMsg) { %>
+<script>
+    $.notify(`<%= flashMsg.content %>`, {
+        className: "<%= flashMsg.type %>",
+        position: "bottom left",
+        arrowShow: false,
+        autoHide: <%= flashMsg.type !== "error" %>,
+    });
+</script>
+<% } %>

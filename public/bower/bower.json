@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "authors": [
+    "Daniel Dong <daniel-dong@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "weui": "^1.1.2"
+  }
+}
