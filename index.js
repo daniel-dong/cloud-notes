@@ -8,6 +8,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const bodyParser = require('body-parser');
 const moment = require('moment');
+const MyFileStore = require('express-session-file-store');
 
 const orm = require('./models/orm');
 
@@ -22,6 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(session({
+    store: new MyFileStore('__tmp__'),
     secret: '0FuzRKhuS8gCMEDhJE8BYOvIi7yRNK6vSYgR8JYzSms',
     name: 'myNote',
     cookie: {maxAge: 1000 * 3600 * 24 * 7},  //一周内免登录
