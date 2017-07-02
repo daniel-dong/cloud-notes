@@ -15,6 +15,8 @@
     "express": "^4.15.3",
     "express-session": "latest",
     "moment": "^2.18.1",
-    "mongoose": "^4.10.1"
+    "sails-mongo": "^0.12.2",
+    "sails-mysql": "^0.11.5",
+    "waterline": "^0.11.11"
   }
 }
